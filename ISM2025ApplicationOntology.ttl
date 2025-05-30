@@ -1,0 +1,840 @@
+@prefix : <http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/> .
+
+<http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000176
+<http://purl.obolibrary.org/obo/BFO_0000176> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                             rdfs:label "continuant part of" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000178
+<http://purl.obolibrary.org/obo/BFO_0000178> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                             rdfs:label "has continuant part" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/isAbout
+<https://purl.industrialontologies.org/ontology/core/Core/isAbout> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <https://purl.industrialontologies.org/ontology/core/Core/isSubjectOf> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/isSubjectOf
+<https://purl.industrialontologies.org/ontology/core/Core/isSubjectOf> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/manufacturedBy
+<https://purl.industrialontologies.org/ontology/core/Core/manufacturedBy> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                          owl:inverseOf <https://purl.industrialontologies.org/ontology/core/Core/manufactures> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/manufactures
+<https://purl.industrialontologies.org/ontology/core/Core/manufactures> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designatedBy
+<https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designatedBy> rdf:type owl:ObjectProperty ;
+                                                                                                                                 rdfs:subPropertyOf <https://purl.industrialontologies.org/ontology/core/Core/isSubjectOf> ;
+                                                                                                                                 owl:inverseOf <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designates> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designates
+<https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designates> rdf:type owl:ObjectProperty ;
+                                                                                                                               rdfs:subPropertyOf <https://purl.industrialontologies.org/ontology/core/Core/isAbout> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/IAO_0000004
+<https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/IAO_0000004> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                                      rdfs:label "has_measurement_value" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dpp.taltech.ee/EUDPP#EU_DPP
+<http://dpp.taltech.ee/EUDPP#EU_DPP> rdf:type owl:Class ;
+                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                           owl:someValuesFrom <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct>
+                                                         ] ;
+                                     rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> ;
+                                     rdfs:label "DPP" .
+
+
+###  http://dpp.taltech.ee/EUDPP#Facility
+<http://dpp.taltech.ee/EUDPP#Facility> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> .
+
+
+###  http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct
+<http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                                                                                                       rdfs:label "Material Product" .
+
+
+###  http://dpp.taltech.ee/EUDPP/SOC#SubstanceOfConcern
+<http://dpp.taltech.ee/EUDPP/SOC#SubstanceOfConcern> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ChemicalSubstance> .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class ;
+                                             rdfs:label "Quality" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> rdf:type owl:Class ;
+                                             rdfs:label "Object" .
+
+
+###  http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/Bearing
+:Bearing rdf:type owl:Class ;
+         rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> .
+
+
+###  http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/Gearbox
+:Gearbox rdf:type owl:Class ;
+         rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> .
+
+
+###  http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/Generator
+:Generator rdf:type owl:Class ;
+           rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> .
+
+
+###  http://www.semanticweb.org/p42770/ontologies/2025/4/untitled-ontology-209/WindTurbine
+:WindTurbine rdf:type owl:Class ;
+             rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/BearingDPP
+<https://purl.industrialontologies.org/ontology/core/Core/BearingDPP> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                                                            owl:someValuesFrom :Bearing
+                                                                                          ] ;
+                                                                      rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#EU_DPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/BearingManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/BearingManufacturer> rdf:type owl:Class ;
+                                                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/manufactures> ;
+                                                                                                     owl:someValuesFrom :Bearing
+                                                                                                   ] ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/CarbonFootprintDatum
+<https://purl.industrialontologies.org/ontology/core/Core/CarbonFootprintDatum> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum> ;
+                                                                                owl:disjointWith <https://purl.industrialontologies.org/ontology/core/Core/MaterialFootprintDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ChemicalConcentration
+<https://purl.industrialontologies.org/ontology/core/Core/ChemicalConcentration> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ChemicalSubstance
+<https://purl.industrialontologies.org/ontology/core/Core/ChemicalSubstance> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#https://purl.industrialontologies.org/ontology/core/Core/MaterialProduct> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator
+<https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/CombinedLoadBearing
+<https://purl.industrialontologies.org/ontology/core/Core/CombinedLoadBearing> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :Bearing ;
+                                                                               <http://purl.org/dc/terms/description> "Designed to support both radial and axial loads simultaneously (e.g., tapered roller bearings, angular contact ball bearings)." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ConcentrationSpecification
+<https://purl.industrialontologies.org/ontology/core/Core/ConcentrationSpecification> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Dimension
+<https://purl.industrialontologies.org/ontology/core/Core/Dimension> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbine
+<https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbine> rdf:type owl:Class ;
+                                                                                  owl:equivalentClass [ owl:intersectionOf ( :WindTurbine
+                                                                                                                             [ rdf:type owl:Class ;
+                                                                                                                               owl:complementOf <https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbine>
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ] ;
+                                                                                  rdfs:subClassOf :WindTurbine .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbineDPP
+<https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbineDPP> rdf:type owl:Class ;
+                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                                                                           owl:someValuesFrom <https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbine>
+                                                                                                         ] ;
+                                                                                     rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WindTurbineDPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbineManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/DirectDriveWindTurbineManufacturer> rdf:type owl:Class ;
+                                                                                              owl:equivalentClass [ owl:intersectionOf ( <https://purl.industrialontologies.org/ontology/core/Core/WindTurbineManufacturer>
+                                                                                                                                         [ rdf:type owl:Class ;
+                                                                                                                                           owl:complementOf <https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbineManufacturer>
+                                                                                                                                         ]
+                                                                                                                                       ) ;
+                                                                                                                    rdf:type owl:Class
+                                                                                                                  ] ;
+                                                                                              rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WindTurbineManufacturer> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DisassemblyInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/DisassemblyInstruction> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DisposalInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/DisposalInstruction> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DryLubricatedBearing
+<https://purl.industrialontologies.org/ontology/core/Core/DryLubricatedBearing> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/PlainBearing> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Durability
+<https://purl.industrialontologies.org/ontology/core/Core/Durability> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                                                      owl:disjointWith <https://purl.industrialontologies.org/ontology/core/Core/Reliability> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DurabilityDatum
+<https://purl.industrialontologies.org/ontology/core/Core/DurabilityDatum> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/DurabilityValue
+<https://purl.industrialontologies.org/ontology/core/Core/DurabilityValue> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EmissionToAirDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EmissionToAirDatum> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalEmissionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EmissionToSoilDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EmissionToSoilDatum> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalEmissionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EmissionToWaterDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EmissionToWaterDatum> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalEmissionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EndOfLifeInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/EndOfLifeInstruction> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EnergyConsumptionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EnergyConsumptionDatum> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalEmissionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalEmissionDatum> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum> ;
+                                                                                      owl:disjointWith <https://purl.industrialontologies.org/ontology/core/Core/PlasticsReleaseDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/FlexureBearing
+<https://purl.industrialontologies.org/ontology/core/Core/FlexureBearing> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :Bearing ;
+                                                                          <http://purl.org/dc/terms/description> "Achieve motion through the bending of a flexible element. They offer limited range of motion but no friction or backlash." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GearBoxDPP
+<https://purl.industrialontologies.org/ontology/core/Core/GearBoxDPP> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                                                            owl:someValuesFrom :Gearbox
+                                                                                          ] ;
+                                                                      rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#EU_DPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GearBoxManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/GearBoxManufacturer> rdf:type owl:Class ;
+                                                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/manufactures> ;
+                                                                                                     owl:someValuesFrom :Gearbox
+                                                                                                   ] ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbine
+<https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbine> rdf:type owl:Class ;
+                                                                                owl:equivalentClass [ owl:intersectionOf ( :WindTurbine
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                                                                                             owl:someValuesFrom :Gearbox
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ] ;
+                                                                                rdfs:subClassOf :WindTurbine .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbineDPP
+<https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbineDPP> rdf:type owl:Class ;
+                                                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                                                                         owl:someValuesFrom <https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbine>
+                                                                                                       ] ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WindTurbineDPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbineManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbineManufacturer> rdf:type owl:Class ;
+                                                                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/manufactures> ;
+                                                                                                                  owl:someValuesFrom <https://purl.industrialontologies.org/ontology/core/Core/GearDriveWindTurbine>
+                                                                                                                ] ;
+                                                                                            rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WindTurbineManufacturer> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GeneratorDPP
+<https://purl.industrialontologies.org/ontology/core/Core/GeneratorDPP> rdf:type owl:Class ;
+                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/designates> ;
+                                                                                              owl:someValuesFrom :Generator
+                                                                                            ] ;
+                                                                        rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#EU_DPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/GeneratorManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/GeneratorManufacturer> rdf:type owl:Class ;
+                                                                                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/manufactures> ;
+                                                                                                       owl:someValuesFrom :Generator
+                                                                                                     ] ;
+                                                                                 rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HazardousWasteAmount
+<https://purl.industrialontologies.org/ontology/core/Core/HazardousWasteAmount> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Height
+<https://purl.industrialontologies.org/ontology/core/Core/Height> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/Dimension> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HeightDatum
+<https://purl.industrialontologies.org/ontology/core/Core/HeightDatum> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicBearing
+<https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicBearing> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/PlainBearing> ;
+                                                                               <http://purl.org/dc/terms/description> "A film of lubricant is generated by the relative motion of the surfaces, separating them." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicJournalBearing
+<https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicJournalBearing> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf :Bearing .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicTiltingPadThrustBearing
+<https://purl.industrialontologies.org/ontology/core/Core/HydrodynamicTiltingPadThrustBearing> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf :Bearing ;
+                                                                                               <http://purl.org/dc/terms/description> "Also Called Kingsburry trust bearing, because of the company pattent" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/HydrostaticBearing
+<https://purl.industrialontologies.org/ontology/core/Core/HydrostaticBearing> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/PlainBearing> ;
+                                                                              <http://purl.org/dc/terms/description> "Lubricant is supplied under external pressure to separate the surfaces, even at zero speed." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity
+<https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> rdf:type owl:Class .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/InstallationInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/InstallationInstruction> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/JewelBearing
+<https://purl.industrialontologies.org/ontology/core/Core/JewelBearing> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :Bearing ;
+                                                                        <http://purl.org/dc/terms/description> "Hard gemstone (like sapphire or ruby) pivots used in precision instruments with very low loads" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/LandUseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/LandUseDatum> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Length
+<https://purl.industrialontologies.org/ontology/core/Core/Length> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/Dimension> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/LengthDatum
+<https://purl.industrialontologies.org/ontology/core/Core/LengthDatum> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/LinearBearing
+<https://purl.industrialontologies.org/ontology/core/Core/LinearBearing> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Bearing ;
+                                                                         <http://purl.org/dc/terms/description> "Allow linear (straight-line) motion between parts (e.g., a drawer slide, a CNC machine axis)." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MagneticBearing
+<https://purl.industrialontologies.org/ontology/core/Core/MagneticBearing> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :Bearing ;
+                                                                           <http://purl.org/dc/terms/description> "Load is supported by magnetic fields, achieving non-contact support." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MaintenanceInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/MaintenanceInstruction> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Mass
+<https://purl.industrialontologies.org/ontology/core/Core/Mass> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/Dimension> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MassDatum
+<https://purl.industrialontologies.org/ontology/core/Core/MassDatum> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MaterialFootprintDatum
+<https://purl.industrialontologies.org/ontology/core/Core/MaterialFootprintDatum> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MeasurementUnit
+<https://purl.industrialontologies.org/ontology/core/Core/MeasurementUnit> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/MicroplasticReleaseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/MicroplasticReleaseDatum> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/PlasticsReleaseDatum> ;
+                                                                                    owl:disjointWith <https://purl.industrialontologies.org/ontology/core/Core/NanoplasticReleaseDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/NanoplasticReleaseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/NanoplasticReleaseDatum> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/PlasticsReleaseDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/PackagingInformation
+<https://purl.industrialontologies.org/ontology/core/Core/PackagingInformation> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/PackagingWasteAmount
+<https://purl.industrialontologies.org/ontology/core/Core/PackagingWasteAmount> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/PlainBearing
+<https://purl.industrialontologies.org/ontology/core/Core/PlainBearing> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :Bearing ;
+                                                                        <http://purl.org/dc/terms/description> "Load is transferred through a sliding interface, usually with a lubricant." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/PlasticsReleaseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/PlasticsReleaseDatum> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/PlasticsWasteAmount
+<https://purl.industrialontologies.org/ontology/core/Core/PlasticsWasteAmount> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ProductToPackagingRatio
+<https://purl.industrialontologies.org/ontology/core/Core/ProductToPackagingRatio> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RadialBearing
+<https://purl.industrialontologies.org/ontology/core/Core/RadialBearing> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Bearing ;
+                                                                         <http://purl.org/dc/terms/description> "Designed to support loads perpendicular to the shaft's axis of rotation (radial loads)." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Recoverability
+<https://purl.industrialontologies.org/ontology/core/Core/Recoverability> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RecoverableRate
+<https://purl.industrialontologies.org/ontology/core/Core/RecoverableRate> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Recyclability
+<https://purl.industrialontologies.org/ontology/core/Core/Recyclability> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RecycledMaterialsUseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/RecycledMaterialsUseDatum> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RecyclingCollectionRate
+<https://purl.industrialontologies.org/ontology/core/Core/RecyclingCollectionRate> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RecyclingInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/RecyclingInstruction> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RecyclingRate
+<https://purl.industrialontologies.org/ontology/core/Core/RecyclingRate> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RefurbishmentInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/RefurbishmentInstruction> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Reliability
+<https://purl.industrialontologies.org/ontology/core/Core/Reliability> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ReliabilityDatum
+<https://purl.industrialontologies.org/ontology/core/Core/ReliabilityDatum> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ReliabilityValue
+<https://purl.industrialontologies.org/ontology/core/Core/ReliabilityValue> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RepairInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/RepairInstruction> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ReuseInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/ReuseInstruction> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RigidBearing
+<https://purl.industrialontologies.org/ontology/core/Core/RigidBearing> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :Bearing ;
+                                                                        <http://purl.org/dc/terms/description> "Require precise alignment between the shaft and housing." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RollingElementBearing
+<https://purl.industrialontologies.org/ontology/core/Core/RollingElementBearing> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf :Bearing ;
+                                                                                 <http://purl.org/dc/terms/description> "Load is transferred through rolling elements (balls or rollers) between two raceways." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/RotaryBearing
+<https://purl.industrialontologies.org/ontology/core/Core/RotaryBearing> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Bearing ;
+                                                                         <http://purl.org/dc/terms/description> "Allow rotational motion between parts (e.g., supporting a spinning shaft). This is the most common type and what your initial list focused on." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/SafeUseInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/SafeUseInstruction> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/SelfAligningBearing
+<https://purl.industrialontologies.org/ontology/core/Core/SelfAligningBearing> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :Bearing ;
+                                                                               <http://purl.org/dc/terms/description> "Can accommodate some misalignment between the shaft and housing (e.g., self-aligning ball bearings, spherical roller bearings)." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/SphericalPlainBearing
+<https://purl.industrialontologies.org/ontology/core/Core/SphericalPlainBearing> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf :Bearing ;
+                                                                                 <http://purl.org/dc/terms/description> "Allow angular rotation in multiple axes and can accommodate misalignment. They primarily handle oscillatory movements and misalignment." .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/SustainableRenewableMaterialsUseDatum
+<https://purl.industrialontologies.org/ontology/core/Core/SustainableRenewableMaterialsUseDatum> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/TechnicalSpecificationInstruction
+<https://purl.industrialontologies.org/ontology/core/Core/TechnicalSpecificationInstruction> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ThresholdValue
+<https://purl.industrialontologies.org/ontology/core/Core/ThresholdValue> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/ThrustBearing
+<https://purl.industrialontologies.org/ontology/core/Core/ThrustBearing> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Bearing ;
+                                                                         <http://purl.org/dc/terms/description> "Designed to support loads parallel to the shaft's axis of rotation (axial loads)." ;
+                                                                         rdfs:seeAlso "Axial Bearing" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Volume
+<https://purl.industrialontologies.org/ontology/core/Core/Volume> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/Dimension> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/VolumeDatum
+<https://purl.industrialontologies.org/ontology/core/Core/VolumeDatum> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount
+<https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/WaterConsumptionDatum
+<https://purl.industrialontologies.org/ontology/core/Core/WaterConsumptionDatum> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Weight
+<https://purl.industrialontologies.org/ontology/core/Core/Weight> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/Width
+<https://purl.industrialontologies.org/ontology/core/Core/Width> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/Dimension> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/WidthDatum
+<https://purl.industrialontologies.org/ontology/core/Core/WidthDatum> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/WindTurbineDPP
+<https://purl.industrialontologies.org/ontology/core/Core/WindTurbineDPP> rdf:type owl:Class ;
+                                                                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/isAbout> ;
+                                                                                                owl:someValuesFrom :WindTurbine
+                                                                                              ] ;
+                                                                          rdfs:subClassOf <http://dpp.taltech.ee/EUDPP#EU_DPP> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/WindTurbineManufacturer
+<https://purl.industrialontologies.org/ontology/core/Core/WindTurbineManufacturer> rdf:type owl:Class ;
+                                                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <https://purl.industrialontologies.org/ontology/core/Core/manufactures> ;
+                                                                                                         owl:someValuesFrom :WindTurbine
+                                                                                                       ] ;
+                                                                                   rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization> .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016
+<https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                                                      rdfs:label "Disposition" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000027
+<https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000027> rdf:type owl:Class ;
+                                                                                                      rdfs:label "Object Aggregate" .
+
+
+###  https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization
+<https://purl.industrialontologies.org/ontology/core/Core/https://purl.industrialontologies.org/ontology/core/Core/BusinessOrganization> rdf:type owl:Class ;
+                                                                                                                                         rdfs:subClassOf <https://purl.industrialontologies.org/ontology/core/Core/http://purl.obolibrary.org/obo/BFO_0000027> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dpp.taltech.ee/EUDPP#EU_DPP>
+                <https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator>
+                <https://purl.industrialontologies.org/ontology/core/Core/ConcentrationSpecification>
+                <https://purl.industrialontologies.org/ontology/core/Core/DigitalInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/DurabilityDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/DurabilityValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/ProductToPackagingRatio>
+                <https://purl.industrialontologies.org/ontology/core/Core/ReliabilityDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/ReliabilityValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/ThresholdValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://dpp.taltech.ee/EUDPP#EU_DPP>
+                <https://purl.industrialontologies.org/ontology/core/Core/CircularEconomyIndicator>
+                <https://purl.industrialontologies.org/ontology/core/Core/ConcentrationSpecification>
+                <https://purl.industrialontologies.org/ontology/core/Core/DimensionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/DurabilityValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalFootprintDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/EnvironmentalPollutionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/ProductToPackagingRatio>
+                <https://purl.industrialontologies.org/ontology/core/Core/ReliabilityValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/ResourceConsumptionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/ThresholdValue>
+                <https://purl.industrialontologies.org/ontology/core/Core/WasteGenerationAmount>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/DisassemblyInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/DisposalInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/EndOfLifeInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/InstallationInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/MaintenanceInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/RecyclingInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/RefurbishmentInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/RepairInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/ReuseInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/SafeUseInstruction>
+                <https://purl.industrialontologies.org/ontology/core/Core/TechnicalSpecificationInstruction>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/EmissionToAirDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/EmissionToSoilDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/EmissionToWaterDatum>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/EnergyConsumptionDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/LandUseDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/RecycledMaterialsUseDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/SustainableRenewableMaterialsUseDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/WaterConsumptionDatum>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/HazardousWasteAmount>
+                <https://purl.industrialontologies.org/ontology/core/Core/PackagingWasteAmount>
+                <https://purl.industrialontologies.org/ontology/core/Core/PlasticsWasteAmount>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/Height>
+                <https://purl.industrialontologies.org/ontology/core/Core/Length>
+                <https://purl.industrialontologies.org/ontology/core/Core/Mass>
+                <https://purl.industrialontologies.org/ontology/core/Core/Volume>
+                <https://purl.industrialontologies.org/ontology/core/Core/Width>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/HeightDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/LengthDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/MassDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/VolumeDatum>
+                <https://purl.industrialontologies.org/ontology/core/Core/WidthDatum>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://purl.industrialontologies.org/ontology/core/Core/RecoverableRate>
+                <https://purl.industrialontologies.org/ontology/core/Core/RecyclingCollectionRate>
+                <https://purl.industrialontologies.org/ontology/core/Core/RecyclingRate>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
