@@ -1,0 +1,153 @@
+class,annotationProperty,annotationValue
+http://dpp.taltech.ee/EUDPP#CarbonFootprint,http://www.w3.org/2000/01/rdf-schema#comment,"Carbon footprint
+means the sum of greenhouse gas emissions and greenhouse gas remo
+vals in a product system,
+expressed as CO equivalents and based on a life cycle assessment using the single impact category
+of climate change. (ESPR Art 2 25))"
+http://dpp.taltech.ee/EUDPP#CircularEconomyIndicators,http://www.w3.org/2000/01/rdf-schema#comment,"Circular Economy indicators are measures for relevant monitoring the transition to a circular economy and to measure the effects of new policy and trends.
+
+See also https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en"
+http://dpp.taltech.ee/EUDPP#ClassificationCode,http://www.w3.org/2000/01/rdf-schema#comment,A classification code from some product classification scheme .
+http://dpp.taltech.ee/EUDPP#Concentration,http://www.w3.org/2000/01/rdf-schema#comment,"Concentration of the substance of concern
+the concentration of the substances of concern, at the level of the product, its relevant components,
+or spare parts ESPR Art 7(5)"
+http://dpp.taltech.ee/EUDPP#DPPEstablismentLevel,http://www.w3.org/2000/01/rdf-schema#comment,"The product passport should be defined at the level of item, batch or product model, depending on specific needs and complexity of the value chain, the size, nature or impacts of the products considered. (Standardisation Request 5423 7)"
+http://dpp.taltech.ee/EUDPP#DigitalInstruction,http://www.w3.org/2000/01/rdf-schema#comment,"Digital instructions
+mean instructions in digital format concerning the product (‘digital instructions’) in a language that
+can be easily understood. ESPR Art 27(7)
+Digital instructions are ensured by manufacturers. These should a
+lso ensured by importers. (ESPR
+Art 29(4))"
+http://dpp.taltech.ee/EUDPP#DigitalInstruction,http://www.w3.org/2000/01/rdf-schema#label,DigitalInstruction
+http://dpp.taltech.ee/EUDPP#Dimension,http://www.w3.org/2000/01/rdf-schema#comment,"Dimension class covers in addtion to 
+ 3-part measurement, length x width x height, of an item or its package also their Volume and Weight.
+
+ESPR Annex I requires in its product parameters list 
+weight and volume of the product and its packaging."
+http://dpp.taltech.ee/EUDPP#Disassembly,http://www.w3.org/2000/01/rdf-schema#comment,Disassembly instructions of the product.
+http://dpp.taltech.ee/EUDPP#Disposal,http://www.w3.org/2000/01/rdf-schema#comment,Disposal instructions of the product.
+http://dpp.taltech.ee/EUDPP#Durability,http://www.w3.org/2000/01/rdf-schema#comment,"Durability
+means the ability
+of a product to maintain over time its function and performance under specified
+conditions of use, maintenance and repair. (ESPR Art 2 (22))"
+http://dpp.taltech.ee/EUDPP#EU_DPP,http://www.w3.org/2000/01/rdf-schema#comment,"Digita Product Passport (DPP)
+means a set of data specific to a product that includes the information specified in the app
+licable
+delegated act adopted pursuant to Article 4 and that is accessible via electronic means through a
+data carrier in accordance with Chapter III. (ESPR Art 2 (28))"
+http://dpp.taltech.ee/EUDPP#EU_DPP,http://www.w3.org/2000/01/rdf-schema#label,EU_DPP
+http://dpp.taltech.ee/EUDPP#EmissionToAir,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in
+the ESPR Annex I :
+
+(q) emissions to air, water or soil released in one or more lifecycle stages of the product as
+expressed through quantities and nature of emissio ns, including noise;"
+http://dpp.taltech.ee/EUDPP#EmissionToSoil,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in
+the ESPR Annex I :
+
+(q) emissions to air, water or soil released in one or more lifecycle stages of the product as
+expressed through quantities and nature of emissio ns, including noise."
+http://dpp.taltech.ee/EUDPP#EmissionToWater,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in
+the ESPR Annex I :
+
+(q) emissions to air, water or soil released in one or more lifecycle stages of the product as
+expressed through quantities and nature of emissio ns, including noise"
+http://dpp.taltech.ee/EUDPP#EndOfLife,http://www.w3.org/2000/01/rdf-schema#comment,End-of-life instructions of the product.
+http://dpp.taltech.ee/EUDPP#EnergyConsumption,,
+http://dpp.taltech.ee/EUDPP#EnvironmentalEmission,http://www.w3.org/2000/01/rdf-schema#comment,"Emission is the act or amount of sending out gas, heat, light, etc. It can also refer to harmful substances that are released into the environment, especially carbon dioxide.
+
+https://dictionary.cambridge.org/dictionary/english/emission"
+http://dpp.taltech.ee/EUDPP#EnvironmentalFootprint,http://www.w3.org/2000/01/rdf-schema#comment,"Environmental footprint
+means a quantification of the environmental impacts resulting from a product throughout its life
+cycle, whether in relation to a single environmental impact category or an aggregated set of impact
+categories based on the Product Environmental Footprint method established by Recommendation
+(EU) 2 021/2279 or other scientific methods developed by int ernational organisations, widely tested
+in collaboration with different industry sectors and adopted or implemented by the Commission in
+other Union law. (ESPR Art 2 (24)).
+
+Product parameters list ESPR Annex I
+(m) The environmental footprint of the product, expressed as a quantification;"
+http://dpp.taltech.ee/EUDPP#EnvironmentalPollution,http://www.w3.org/2000/01/rdf-schema#comment,"Environmental pollution is the addition of any substance or form of energy to the environment at a rate faster than it can be dispersed or safely stored.
+
+https://www.britannica.com/science/pollution-environment"
+http://dpp.taltech.ee/EUDPP#Facility,http://www.w3.org/2000/01/rdf-schema#comment,"A Facility may be a place where specific activities occur.
+
+A production/manufacturing facility means a factory. The term may refer to any place that makes things, or plants that generate electricity.
+
+https://marketbusinessnews.com/financial-glossary/facility/"
+http://dpp.taltech.ee/EUDPP#Facility,http://www.w3.org/2000/01/rdf-schema#comment,"Business facilities are structures that provide services to a business. This can include space for employees, technology, equipment and inventory. Facilities can be used for business administration, operations or to provide services to customers."
+http://dpp.taltech.ee/EUDPP#HazardousWaste,,
+http://dpp.taltech.ee/EUDPP#Height,,
+http://dpp.taltech.ee/EUDPP#Installation,http://www.w3.org/2000/01/rdf-schema#comment,Installation instructions
+http://dpp.taltech.ee/EUDPP#LandUse,,
+http://dpp.taltech.ee/EUDPP#Length,,
+http://dpp.taltech.ee/EUDPP#Maintenance,http://www.w3.org/2000/01/rdf-schema#comment,Maintenance instructions. (ESPR Annex I (b))
+http://dpp.taltech.ee/EUDPP#MaterialFootprint,http://www.w3.org/2000/01/rdf-schema#comment,"Material footprint
+refers to the total amount of raw materials extracted to meet final consumpt
+ion demands. (ESPR
+Art 2 (26))"
+http://dpp.taltech.ee/EUDPP#MeasurementUnit,http://www.w3.org/2000/01/rdf-schema#comment,"A measurement unit such as kilogram, metre, etc., provided as a reference for the magnitude of the quantity in respect to its value. (VIM 1.9: real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number)"
+http://dpp.taltech.ee/EUDPP#MeasurementUnit,http://www.w3.org/2000/01/rdf-schema#seeAlso,si:MeasurementUnit a owl:Class ;
+http://dpp.taltech.ee/EUDPP#MicroplasticRelease,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in the ESPR Annex I :
+
+(p) microplastic and nano plastic release as expressed through the r elease during relevant
+product life cycle stages, including manufacturing, transport, use and end of life stages;"
+http://dpp.taltech.ee/EUDPP#NanoplasticRelease,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in the ESPR Annex I :
+
+(p) microplastic and nano plastic release as expressed through the r elease during relevant
+product life cycle stages, including manufacturing, transport, use and end of life stages;"
+http://dpp.taltech.ee/EUDPP#PackagingDetail,http://www.w3.org/2000/01/rdf-schema#comment,Details of packaging.
+http://dpp.taltech.ee/EUDPP#PackagingWaste,,
+http://dpp.taltech.ee/EUDPP#PlasticsRelease,http://www.w3.org/2000/01/rdf-schema#comment,"Product parameters
+are listed in
+the ESPR Annex I :
+
+(p) microplastic and nano plastic release as expressed through the r elease during relevant
+product life cycle stages, including manufacturing, transport, use and end of life stages;"
+http://dpp.taltech.ee/EUDPP#PlasticsWaste,,
+http://dpp.taltech.ee/EUDPP#Product,http://www.w3.org/2000/01/rdf-schema#comment,Product means any physical goods that are placed on the market or put into service. ESPR Art 2 (1))
+http://dpp.taltech.ee/EUDPP#Product,http://www.w3.org/2000/01/rdf-schema#label,Product
+http://dpp.taltech.ee/EUDPP#Product,http://www.w3.org/2004/02/skos/core#exactmatch,schema:Product
+http://dpp.taltech.ee/EUDPP#ProductToPackagingRatio,http://www.w3.org/2000/01/rdf-schema#comment,"ESPR Annes I, list of product parameters
+(j) weight and volume of the product and its packaging, and the product to packaging ratio;"
+http://dpp.taltech.ee/EUDPP#QualityIndicators,http://www.w3.org/2000/01/rdf-schema#comment,Product characteristics like durability and reliability.
+http://dpp.taltech.ee/EUDPP#QuantitativeProductProperty,http://www.w3.org/2000/01/rdf-schema#comment,"A property (respectively measurand of a property) of the product (model) that is expressed by a quantity value. A specific quantity. (VIM 2.3: The specification of a measurand requires knowledge of the kind of quantity, description of the state of the phenomenon, body, or substance carrying the quantity, including any relevant component, and the chemical entities involved.)"
+http://dpp.taltech.ee/EUDPP#QuantitativeProductProperty,http://www.w3.org/2000/01/rdf-schema#seeAlso,dcc:measurand
+http://dpp.taltech.ee/EUDPP#QuantityKind,http://www.w3.org/2000/01/rdf-schema#comment,"Statement of kind of quantity such as length, mass, time, temperature, concentration of substance, (VIM 1.2: aspect common to mutually comparable quantities)"
+http://dpp.taltech.ee/EUDPP#QuantityKind,http://www.w3.org/2000/01/rdf-schema#seeAlso,si:QuantityKind a owl:Class ;
+http://dpp.taltech.ee/EUDPP#QuantityRange,http://www.w3.org/2000/01/rdf-schema#comment,Range of quantity value
+http://dpp.taltech.ee/EUDPP#QuantityValue,http://www.w3.org/2000/01/rdf-schema#comment,"Expression of the magnitude of a quantity/property by a number (numerical value) and a reference in the form of a unit, a reference material, or a reference procedure. (VIM 1.19: number and reference together expressing magnitude of a quantity)"
+http://dpp.taltech.ee/EUDPP#RecoverableRate,,
+http://dpp.taltech.ee/EUDPP#RecycledMaterialsUse,,
+http://dpp.taltech.ee/EUDPP#Recycling,http://www.w3.org/2000/01/rdf-schema#comment,Recycling instructions of the product.
+http://dpp.taltech.ee/EUDPP#RecyclingCollectionRate,,
+http://dpp.taltech.ee/EUDPP#RecyclingRate,,
+http://dpp.taltech.ee/EUDPP#Refurbishment,http://www.w3.org/2000/01/rdf-schema#comment,Instructions for the refurbishment of the product.
+http://dpp.taltech.ee/EUDPP#Reliability,http://www.w3.org/2000/01/rdf-schema#comment,"Reliability
+ is the ability of an item to perform its function under specified conditions over a given period.
+ It is usually expressed in terms of mean time between failures (MTBF), which is the average length of time that a device will operate without failure."
+http://dpp.taltech.ee/EUDPP#Reliability,http://www.w3.org/2000/01/rdf-schema#comment,"Reliability
+means the probability that a product functions as required under given conditions for a given
+duration without an occurrence which results in a primary or secondary function of the product no
+longer being performed. (ESPR Art 2 (16))"
+http://dpp.taltech.ee/EUDPP#Repair,http://www.w3.org/2000/01/rdf-schema#comment,Repair instructions. (ESPR Annex I (b))
+http://dpp.taltech.ee/EUDPP#ResourceConsumption,,
+http://dpp.taltech.ee/EUDPP#Reuse,http://www.w3.org/2000/01/rdf-schema#comment,Instructions for the reuse of the product.
+http://dpp.taltech.ee/EUDPP#SafeUse,http://www.w3.org/2000/01/rdf-schema#comment,"Instructions for the safe use of the product. (ESPR Art 7 (5), (d))"
+http://dpp.taltech.ee/EUDPP#SustainableRenewableMaterialsUse,,
+http://dpp.taltech.ee/EUDPP#TechnicalSpecification,http://www.w3.org/2000/01/rdf-schema#comment,"means a document that prescribes technical requirements to
+be fulfilled by a product, process or
+service. (ESPR Art 2 (49))"
+http://dpp.taltech.ee/EUDPP#Threshold,http://www.w3.org/2000/01/rdf-schema#comment,"Relevant threshold of Substance of Concern.
+
+By default, information on all substances of concern present in a product, above the  relevant thresholds, should be included in the DPP [ESPR FAQ 10.115, p59]"
+http://dpp.taltech.ee/EUDPP#Type,http://www.w3.org/2000/01/rdf-schema#comment,Any type that Thing can have.
+http://dpp.taltech.ee/EUDPP#Volume,,
+http://dpp.taltech.ee/EUDPP#WasteGenerationAmount,,
+http://dpp.taltech.ee/EUDPP#WaterConsumption,,
+http://dpp.taltech.ee/EUDPP#Weight,,
+http://dpp.taltech.ee/EUDPP#Width,,
