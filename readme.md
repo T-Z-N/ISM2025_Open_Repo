@@ -33,7 +33,7 @@ These files serve as the data source for SPARQL queries and contain the semantic
 
 ### SPARQL Queries
 - **AnnotationQuery1.rq**: Extracts annotation data from ontology files
-- **TaxonomyQuery2.rq**: Retrieves taxonomical relationships and hierarchies
+- **TaxonomyQuery2.rq**: Retrieves taxonomical relationships
 
 ### Python Processing Scripts
 
@@ -43,14 +43,12 @@ Converts taxonomy query results to a formatted Excel file with the following fea
 - Outputs to `taxonomy_hierarchy.xlsx`
 - Auto-adjusts column widths
 - Merges cells for superclass columns with identical values
-- Centers alignment for merged cells
 
 #### csvToexcel_terminology.py
 Processes terminology annotations with enhanced formatting:
 - Reads from `query-result.csv` 
 - Outputs to `class_annotations.xlsx`
 - Merges cells for class columns with identical values
-- Handles NaN values for clean presentation
 
 ## Usage
 
@@ -84,7 +82,6 @@ The ontology files in the `OntologyFiles/` directory are in Turtle (TTL) format 
 - Ensure CSV files are present in the same directory as the scripts
 - For taxonomy processing: `taxonomy_query_results.csv`
 - For terminology processing: `query-result.csv`
-- Ontology files should be placed in the `OntologyFiles/` directory
 
 ## Data Flow
 
@@ -98,28 +95,3 @@ The ontology files in the `OntologyFiles/` directory are in Turtle (TTL) format 
 
 - **taxonomy_hierarchy.xlsx**: Formatted taxonomy relationships with merged superclass cells
 - **class_annotations.xlsx**: Processed terminology annotations with grouped classes
-
-## Error Handling
-
-Both scripts include comprehensive error handling for:
-- Missing input files
-- Data processing exceptions
-- File writing errors
-
-## File Formats
-
-- **Input**: TTL (Turtle) ontology files, CSV query results
-- **Output**: Excel files (.xlsx) with formatted data and merged cells
-- **Queries**: SPARQL query files (.rq)
-
-## Contributing
-
-When adding new queries or processing scripts, ensure:
-- Proper error handling is implemented
-- Output formatting follows the established patterns
-- Documentation is updated accordingly
-- Ontology files follow proper TTL syntax
-
-## License
-
-This project is part of ISM2025 research work.
